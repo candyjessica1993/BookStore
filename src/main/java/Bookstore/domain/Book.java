@@ -1,5 +1,7 @@
 package Bookstore.domain;
+import javax.persistence.Entity; 
 
+@Entity
 public class Book {
 	private String title; 
 	private String author; 
@@ -68,5 +70,6 @@ public class Book {
 		return "Book [title=" + title + ", author=" + author + ", year=" + year
 				+ ", isbn=" + isbn + ", price=" + price + "]";
 	} 	
+	
 
 }
